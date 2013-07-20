@@ -1,0 +1,34 @@
+{
+  "name": "jquery.bank",
+  "version": "1.0.0",
+  "description": "jQuery Bank",
+  "main": "lib/jquery.bank.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gumroad/jquery.bank.git"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "coffee-script": "*",
+    "jquery": "*",
+    "assert": "*",
+    "sinon": "*"
+  },
+  "keywords": [
+    "bank",
+    "routing number",
+    "routing transit number"
+  ],
+  "author": "Katsuya Noguchi",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "latest"
+  }
+}

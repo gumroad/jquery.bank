@@ -1,0 +1,27 @@
+{
+  "name": "bank",
+  "title": "jQuery Bank",
+  "description": "A library for building bank account forms, formatting and validating inputs.",
+  "keywords": [
+      "bank",
+      "format",
+      "validation",
+      "number"
+  ],
+  "version": "1.0.0",
+  "author": {
+      "name": "Katsuya Noguchi",
+      "url": "https://github.com/kn"
+  },
+  "licenses": [
+      {
+          "url": "https://github.com/gumroad/jquery.bank/blob/master/LICENSE"
+      }
+  ],
+  "bugs": "https://github.com/gumroad/jquery.bank/issues",
+  "homepage": "https://gumroad.com",
+  "docs": "https://github.com/gumroad/jquery.bank/issues",
+  "dependencies": {
+      "jquery": ">=1.5"
+  }
+}
