@@ -36,7 +36,7 @@ $.bank.validate('BankNumber', 'JP', number);
 * Validates numbers
 * Validates length to 4
 
-### Branch Number
+#### Branch Number
 
 ```javascript
 $input.bank('BranchNumber', 'JP');
