@@ -72,6 +72,10 @@ $.bank.validate('RoutingTransitNumber', 'US', number);
 * Validates first two digits
 * Validates check (last) digit
 
+## Example
+
+[http://gumroad.github.io/jquery.bank/example/](http://gumroad.github.io/jquery.bank/example/)
+
 ## Contribute
 
 Install development dependencies
