@@ -9,14 +9,14 @@ formattingRules =
   US:
     RoutingTransitNumber:
       length: 9
-      pattern: /\d/
+      charPattern: /\d/
   JP:
     BankNumber:
       length: 4
-      pattern: /\d/
+      charPattern: /\d/
     BranchNumber:
       length: 3
-      pattern: /\d/
+      charPattern: /\d/
 
 validationRules =
   US:
@@ -39,7 +39,7 @@ $.fn.bank = (field, country) ->
 
   format = formattingRules[country][field]
   @on('keypress', restrictLength format.length) if format.length?
-  @on('keypress', restrictPattern format.pattern) if format.pattern?
+  @on('keypress', restrictCharPattern format.charPattern) if format.charPattern?
 
 $.bank.validate = (field, country, number) ->
   unless validationRules[country]?
@@ -54,14 +54,34 @@ $.bank.validate = (field, country, number) ->
 
 restrictLength = (length) ->
   (e) ->
-    unless $(e.currentTarget).val().length < length
+    $target = $(e.currentTarget)
+    return if hasTextSelected($target)
+
+    unless $target.val().length < length
       e.preventDefault()
 
-restrictPattern = (pattern) ->
+restrictCharPattern = (charPattern) ->
   (e) ->
+    # Key event is for a browser shortcut
+    return true if e.metaKey or e.ctrlKey
+
+    # If keycode is a special char (WebKit)
+    return true if e.which is 0
+
+    # If char is a special char (Firefox)
+    return true if e.which < 33
+
     char = String.fromCharCode(e.which)
-    unless pattern.test(char)
+    unless charPattern.test(char)
       e.preventDefault()
+
+hasTextSelected = ($target) ->
+  return true if $target.prop('selectionStart')? and $target.prop('selectionStart') isnt $target.prop('selectionEnd')
+
+  # Checking for IE.
+  return true if document?.selection?.createRange?().text
+
+  false
 
 ## Validation
 
