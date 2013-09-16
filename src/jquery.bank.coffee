@@ -88,8 +88,9 @@ hasTextSelected = ($target) ->
 validate = (validation, number) ->
   number = (number + '').replace(/\s+/g, '')
   return false unless validation.pattern.test(number)
-  for name in validation.other
-    return false unless validations[name](number)
+  if validation.other?
+    for name in validation.other
+      return false unless validations[name](number)
   return true
 
 validations =

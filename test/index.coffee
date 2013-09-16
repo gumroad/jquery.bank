@@ -149,6 +149,10 @@ describe 'jquery.bank', ->
         isValid = $.bank.validate 'BankNumber', 'JP', '012a'
         assert.equal isValid, false
 
+      it 'should succeed if it is 4 numeric characters', ->
+        isValid = $.bank.validate 'BankNumber', 'JP', '0123'
+        assert.equal isValid, true
+
     describe 'Validating a branch number of Japanese Bank', ->
       it 'should fail if it is empty', ->
         isValid = $.bank.validate 'BranchNumber', 'JP', ''
@@ -169,6 +173,10 @@ describe 'jquery.bank', ->
       it 'should fail if it has a non-numeric character', ->
         isValid = $.bank.validate 'BranchNumber', 'JP', '01a'
         assert.equal isValid, false
+
+      it 'should succeed if it is 3 numeric character', ->
+        isValid = $.bank.validate 'BranchNumber', 'JP', '012'
+        assert.equal isValid, true
 
     describe 'Validating a routing transit number of American Bank', ->
       it 'should fail if it is empty', ->
