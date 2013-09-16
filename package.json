@@ -15,11 +15,11 @@
     "url": "git://github.com/gumroad/jquery.bank.git"
   },
   "devDependencies": {
-    "mocha": "*",
-    "coffee-script": "*",
-    "jquery": "*",
-    "assert": "*",
-    "sinon": "*"
+    "mocha": "1.13.x",
+    "coffee-script": "1.6.x",
+    "jquery": "1.8.x",
+    "assert": "0.4.x",
+    "sinon": "1.7.x"
   },
   "keywords": [
     "bank",
