@@ -74,7 +74,7 @@ $.bank.validate('RoutingTransitNumber', 'US', number);
 
 ## Example
 
-[http://gumroad.github.io/jquery.bank/example/](http://gumroad.github.io/jquery.bank/example/)
+[http://gumroad.github.io/jquery.bank/](http://gumroad.github.io/jquery.bank/)
 
 ## Contribute
 
