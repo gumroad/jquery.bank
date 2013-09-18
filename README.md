@@ -1,4 +1,5 @@
-# jQuery.bank
+# jQuery.bank [![Build Status](https://travis-ci.org/gumroad/jquery.bank.png)](https://travis-ci.org/gumroad/jquery.bank)
+
 
 A library for building bank account forms, formatting and validating inputs.
 
