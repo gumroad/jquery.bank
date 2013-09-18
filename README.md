@@ -88,11 +88,15 @@ We follow [polarmobile/coffeescript-style-guide](https://github.com/polarmobile/
 
 ### Test
 
-Run `cake test`
+```
+npm test
+```
 
 ### Build
 
-Run `cake build`
+```
+cake build
+```
 
 ## References
 
