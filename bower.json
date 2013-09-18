@@ -1,0 +1,16 @@
+{
+  "name": "jquery.bank",
+  "description": "A library for building bank account forms, formatting inputs and validating a value of inputs.",
+  "version": "1.1.1",
+  "main": "./lib/jquery.bank.js",
+  "ignore": [
+    "src",
+    "test",
+    ".gitignore",
+    ".travis.yml",
+    "Cakefile",
+    "bank.jquery.json",
+    "package.json"
+  ],
+  "dependencies": {}
+}
