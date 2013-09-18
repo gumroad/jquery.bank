@@ -9,7 +9,7 @@ If you use bower:
 bower install jquery.bank
 ```
 
-Otherwise, you can download it from (here)[https://github.com/gumroad/jquery.bank/blob/master/lib/jquery.bank.js].
+Otherwise, you can download it from [here](https://github.com/gumroad/jquery.bank/blob/master/lib/jquery.bank.js).
 
 ## API
 
