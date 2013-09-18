@@ -1,7 +1,15 @@
 # jQuery.bank [![Build Status](https://travis-ci.org/gumroad/jquery.bank.png)](https://travis-ci.org/gumroad/jquery.bank)
 
-
 A library for building bank account forms, formatting and validating inputs.
+
+## Installation
+
+If you use bower:
+```
+bower install jquery.bank
+```
+
+Otherwise, you can download it from (here)[https://github.com/gumroad/jquery.bank/blob/master/lib/jquery.bank.js].
 
 ## API
 
